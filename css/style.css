@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 12px;
+  overflow-x: hidden;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+nav.navbar a.navbar-brand,
+nav.navbar a {
+  color: white;
+}
+nav.navbar .navbar-nav {
+  flex-direction: row;
+}
+nav.navbar .navbar-toggler-icon {
+  background-image: url("/images/icon-hamburger.svg");
+}
+
+div.carousel div.carousel-caption {
+  position: relative;
+  left: 0;
+  right: 0;
+  text-align: left;
+  color: black;
+}
+div.carousel div.carousel-control-container {
+  background-color: black;
+}
+div.carousel div.carousel-control-container button.carousel-control-prev,
+div.carousel div.carousel-control-container button.carousel-control-next {
+  display: inline-block;
+  position: relative;
+  height: max-content;
+  width: max-content;
+  z-index: 1000;
+  opacity: 1;
+  background-color: black;
+}
+
+@media (max-width: 375px) {
+  nav.navbar a.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  * img {
+    width: 100vw;
+  }
+
+  div.carousel img {
+    width: 100vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
