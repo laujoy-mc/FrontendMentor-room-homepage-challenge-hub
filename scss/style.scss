@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
+// spacers
+$spacer: 1rem;
+$spacers: ( 0: 0,
+1: $spacer * .25,
+2: $spacer * .5,
+3: $spacer,
+4: $spacer * 1.5,
+5: $spacer * 3,
+);
 // colors
 $primary-dark-gray:hsl(0,
 0%,
@@ -45,20 +54,39 @@ nav.navbar {
     a {
         color: $primary-white;
     }
-    .navbar-nav {
-        flex-direction: row;
-    }
-    .navbar-toggler-icon {
-        background-image: url('/images/icon-hamburger.svg');
+    // .navbar-nav {
+    //     flex-direction: row;
+    // }
+    .navbar-collapse.show {
+        background-color: white;
+        ul li {
+            padding-left: $spacer * 3;
+            padding-right: $spacer * 3;
+            padding-top: $spacer * 0.5;
+            padding-bottom: $spacer * 0.5;
+        }
+        a {
+            color: black;
+        }
     }
 }
 
 // carousel
 div.carousel {
+    img {
+        width: 100%;
+    }
+    .custom-section-size {
+        max-width: 450px;
+        h1 {
+            font-weight: $font-weight-bold;
+        }
+    }
     div.carousel-caption {
         position: relative;
         left: 0;
         right: 0;
+        bottom: 0;
         text-align: left;
         color: $primary-black;
     }

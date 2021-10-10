@@ -21,17 +21,33 @@ nav.navbar a.navbar-brand,
 nav.navbar a {
   color: white;
 }
-nav.navbar .navbar-nav {
-  flex-direction: row;
+nav.navbar .navbar-collapse.show {
+  background-color: white;
 }
-nav.navbar .navbar-toggler-icon {
-  background-image: url("/images/icon-hamburger.svg");
+nav.navbar .navbar-collapse.show ul li {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+nav.navbar .navbar-collapse.show a {
+  color: black;
 }
 
+div.carousel img {
+  width: 100%;
+}
+div.carousel .custom-section-size {
+  max-width: 450px;
+}
+div.carousel .custom-section-size h1 {
+  font-weight: 700;
+}
 div.carousel div.carousel-caption {
   position: relative;
   left: 0;
   right: 0;
+  bottom: 0;
   text-align: left;
   color: black;
 }
